@@ -1,0 +1,15 @@
+import pandas as pd
+
+# Crear una Serie con índices personalizados
+s = pd.Series({"Matemáticas": 6.0, "Economía": 4.5, "Programación": 8.5})
+
+# Ordenar por valores en orden ascendente
+print("Serie original:")
+print(s)
+
+print("\nSerie ordenada por valores (ascendente):")
+print(s.sort_values())
+
+# Ordenar por índice en orden descendente
+print("\nSerie ordenada por índices (descendente):")
+print(s.sort_index(ascending=False))

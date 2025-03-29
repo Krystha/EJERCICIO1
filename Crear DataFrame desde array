@@ -1,0 +1,12 @@
+import pandas as pd
+import numpy as np
+
+# Crear un array de NumPy
+array = np.random.randn(4, 3)  # Array de 4 filas y 3 columnas con valores aleatorios
+
+# Crear un DataFrame a partir del array
+df = pd.DataFrame(array, columns=["a", "b", "c"])
+
+# Mostrar el DataFrame
+print("DataFrame creado desde un array de NumPy:")
+print(df)

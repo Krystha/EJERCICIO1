@@ -1,0 +1,13 @@
+import pandas as pd
+import numpy as np
+
+# Crear una Serie con valores nulos y NaN
+s = pd.Series(["a", "b", None, "c", np.NaN, "d"])
+
+# Mostrar la Serie original
+print("Serie original:")
+print(s)
+
+# Eliminar los datos desconocidos o nulos
+print("\nSerie después de eliminar los datos nulos:")
+print(s.dropna())

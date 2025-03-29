@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Importar un archivo CSV desde una URL
+url = "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesteroles.csv"
+df = pd.read_csv(url, sep=";", decimal=",")
+
+# Reindexar el DataFrame (sin la columna 'tensión', que no existe)
+df_reindexado = df.reindex(index=[4, 3, 1], columns=["nombre", "colesterol"])
+
+# Mostrar el DataFrame reindexado
+print("DataFrame reindexado:")
+print(df_reindexado)

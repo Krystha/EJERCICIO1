@@ -1,0 +1,22 @@
+import pandas as pd
+from math import log
+
+# Crear una Serie numérica
+s1 = pd.Series([1, 2, 3, 4])
+
+# Aplicar una función matemática (logaritmo)
+print("Serie original:")
+print(s1)
+
+print("\nSerie después de aplicar la función log:")
+print(s1.apply(log))
+
+# Crear una Serie de cadenas
+s2 = pd.Series(["a", "b", "c"])
+
+# Aplicar una función a las cadenas (convertir a mayúsculas)
+print("\nSerie de cadenas original:")
+print(s2)
+
+print("\nSerie después de aplicar la función str.upper:")
+print(s2.apply(str.upper))

@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Crear una Serie desde una lista sin especificar índices ni tipo de dato
+serie1 = pd.Series([1, 2, 3, 4, 5])
+print("Serie creada desde una lista (sin índices personalizados):")
+print(serie1)
+
+# Crear una Serie desde una lista con índices personalizados
+serie2 = pd.Series([10, 20, 30, 40, 50], index=["a", "b", "c", "d", "e"])
+print("\nSerie creada desde una lista (con índices personalizados):")
+print(serie2)
+
+# Crear una Serie desde una lista especificando el tipo de dato
+serie3 = pd.Series([1.1, 2.2, 3.3, 4.4, 5.5], dtype="float64")
+print("\nSerie creada desde una lista (especificando el tipo de dato):")
+print(serie3)

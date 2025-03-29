@@ -1,0 +1,21 @@
+import pandas as pd
+
+# Crear una Serie
+s = pd.Series([1, 1, 1, 1, 2, 2, 2, 3, 3, 4])
+
+# Resumen descriptivo de la Serie
+print("Número de elementos no nulos (s.count()):", s.count())
+print("Suma de los elementos (s.sum()):", s.sum())
+print("\nSuma acumulada (s.cumsum()):")
+print(s.cumsum())
+print("\nFrecuencias absolutas (s.value_counts()):")
+print(s.value_counts())
+print("\nFrecuencias relativas (s.value_counts(normalize=True)):")
+print(s.value_counts(normalize=True))
+print("\nMínimo (s.min()):", s.min())
+print("Máximo (s.max()):", s.max())
+print("Media (s.mean()):", s.mean())
+print("Varianza (s.var()):", s.var())
+print("Desviación típica (s.std()):", s.std())
+print("\nResumen descriptivo (s.describe()):")
+print(s.describe())

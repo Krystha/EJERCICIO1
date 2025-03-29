@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Importar un archivo CSV desde una URL
+url = "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesteroles.csv"
+df = pd.read_csv(url, sep=";", decimal=",")
+
+# Cambiar el índice del DataFrame a la columna "nombre"
+df_con_nuevo_indice = df.set_index("nombre")
+
+# Mostrar el DataFrame con el nuevo índice
+print("DataFrame con la columna 'nombre' como índice:")
+print(df_con_nuevo_indice.head())

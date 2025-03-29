@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Importar un archivo CSV desde una URL
+url = "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesterol.csv"
+df = pd.read_csv(url, sep=";", decimal=",")
+
+# Multiplicar la columna "altura" por 100
+print("Altura en centímetros (df['altura'] * 100):")
+print(df["altura"] * 100)
+
+# Comparar los valores de la columna "sexo" con "M"
+print("\n¿El sexo es 'M'? (df['sexo'] == 'M'):")
+print(df["sexo"] == "M")

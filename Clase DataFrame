@@ -1,0 +1,27 @@
+import pandas as pd
+
+# Crear un DataFrame con información de alumnos
+data = {
+    "Nombre": ["Ana", "Luis", "Carlos", "María"],
+    "Edad": [23, 22, 21, 24],
+    "Nota Final": [8.5, 7.0, 9.0, 6.5],
+    "Aprobado": [True, True, True, False]
+}
+
+df = pd.DataFrame(data)
+
+# Mostrar el DataFrame
+print("DataFrame de alumnos:")
+print(df)
+
+# Acceder a una columna específica
+print("\nColumna 'Nombre':")
+print(df["Nombre"])
+
+# Acceder a una fila específica por índice
+print("\nFila con índice 2:")
+print(df.loc[2])
+
+# Acceder a un elemento específico (fila 1, columna 'Nota Final')
+print("\nElemento en fila 1, columna 'Nota Final':")
+print(df.at[1, "Nota Final"])

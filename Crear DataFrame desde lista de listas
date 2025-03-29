@@ -1,0 +1,19 @@
+import pandas as pd
+
+# Crear un DataFrame a partir de una lista de listas
+data = [
+    ["María", 18],
+    ["Luis", 22],
+    ["Carmen", 20],
+    ["Antonio", 21]
+]
+
+# Especificar los nombres de las columnas
+columnas = ["Nombre", "Edad"]
+
+# Crear el DataFrame
+df = pd.DataFrame(data, columns=columnas)
+
+# Mostrar el DataFrame
+print("DataFrame creado desde una lista de listas:")
+print(df)

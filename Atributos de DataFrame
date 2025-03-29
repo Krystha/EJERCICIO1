@@ -1,0 +1,35 @@
+import pandas as pd
+
+# Importar un archivo CSV desde una URL
+url = "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesteroles.csv"
+df = pd.read_csv(url, sep=";", decimal=",")
+
+# Mostrar información general del DataFrame
+print("Información del DataFrame (df.info()):")
+df.info()
+
+# Mostrar el número de filas y columnas
+print("\nNúmero de filas y columnas (df.shape):", df.shape)
+
+# Mostrar el número total de elementos
+print("\nNúmero total de elementos (df.size):", df.size)
+
+# Mostrar los nombres de las columnas
+print("\nNombres de las columnas (df.columns):")
+print(df.columns)
+
+# Mostrar los nombres de las filas (índices)
+print("\nNombres de las filas (df.index):")
+print(df.index)
+
+# Mostrar los tipos de datos de las columnas
+print("\nTipos de datos de las columnas (df.dtypes):")
+print(df.dtypes)
+
+# Mostrar las primeras 5 filas
+print("\nPrimeras 5 filas del DataFrame (df.head()):")
+print(df.head())
+
+# Mostrar las últimas 5 filas
+print("\nÚltimas 5 filas del DataFrame (df.tail()):")
+print(df.tail())

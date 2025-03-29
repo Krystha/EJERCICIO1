@@ -1,0 +1,14 @@
+import pandas as pd
+
+# Crear una Serie
+s = pd.Series([1, 2, 2, 3, 3, 3, 4, 4, 4, 4])
+
+# Mostrar el número de elementos de la Serie
+print("Número de elementos en la Serie (s.size):", s.size)
+
+# Mostrar los índices de la Serie
+print("\nÍndices de la Serie (s.index):")
+print(s.index)
+
+# Mostrar el tipo de datos de los elementos de la Serie
+print("\nTipo de datos de los elementos de la Serie (s.dtype):", s.dtype)

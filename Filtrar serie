@@ -1,0 +1,11 @@
+import pandas as pd
+
+# Crear una Serie con índices personalizados
+s = pd.Series({"Matemáticas": 6.0, "Economía": 4.5, "Programación": 8.5})
+
+# Filtrar elementos mayores a 5
+print("Serie original:")
+print(s)
+
+print("\nElementos mayores a 5:")
+print(s[s > 5])

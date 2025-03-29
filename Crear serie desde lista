@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Crear una Serie desde una lista con tipo de dato especificado
+s = pd.Series(
+    ["Matemáticas", "Historia", "Economía", "Programación", "Inglés"], dtype="string"
+)
+
+# Imprimir la Serie
+print("Serie creada desde una lista:")
+print(s)

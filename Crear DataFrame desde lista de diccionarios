@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Crear un DataFrame a partir de una lista de diccionarios
+data = [
+    {"Nombre": "María", "Edad": 18},
+    {"Nombre": "Luis", "Edad": 22},
+    {"Nombre": "Carmen"},  # Edad no especificada
+    {"Nombre": "Antonio", "Edad": 21}
+]
+
+# Crear el DataFrame
+df = pd.DataFrame(data)
+
+# Mostrar el DataFrame
+print("DataFrame creado desde una lista de diccionarios:")
+print(df)

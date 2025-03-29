@@ -1,0 +1,15 @@
+import pandas as pd
+
+# Importar un archivo CSV desde una URL
+url = "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesteroles.csv"
+df = pd.read_csv(url, sep=";", decimal=",")
+
+# Renombrar columnas y filas
+df_renombrado = df.rename(
+    columns={"nombre": "nombre y apellidos", "altura": "estatura"},
+    index={0: 1000, 1: 1001, 2: 1002}
+)
+
+# Mostrar el DataFrame renombrado
+print("DataFrame con nombres de columnas y filas renombrados:")
+print(df_renombrado)

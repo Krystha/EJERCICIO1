@@ -1,0 +1,21 @@
+import pandas as pd
+
+# Importar un archivo CSV desde una URL
+url = "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesteroles.csv"
+df = pd.read_csv(url, sep=";", decimal=",")
+
+# Acceder a un elemento específico (fila 2, columna "colesterol")
+print("Elemento en la fila 2, columna 'colesterol' (df.loc[2, 'colesterol']):")
+print(df.loc[2, "colesterol"])
+
+# Acceder a un subconjunto de filas y columnas
+print("\nElementos de las filas 1 a 3, columnas 'colesterol' y 'peso' (df.loc[1:3, ['colesterol', 'peso']]):")
+print(df.loc[1:3, ["colesterol", "peso"]])
+
+# Acceder a una columna completa como Serie
+print("\nColumna 'colesterol' (df['colesterol']):")
+print(df["colesterol"])
+
+# Acceder a una columna utilizando el atributo (si no tiene espacios en blanco)
+print("\nColumna 'colesterol' utilizando el atributo (df.colesterol):")
+print(df.colesterol)

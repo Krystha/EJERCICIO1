@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Importar un archivo CSV desde una URL
+url = "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesteroles.csv"
+df = pd.read_csv(url, sep=";", decimal=",")
+
+# Acceder a un elemento específico (fila 1, columna 3)
+print("Elemento en la fila 1, columna 3 (df.iloc[1, 3]):")
+print(df.iloc[1, 3])
+
+# Acceder a las dos primeras columnas de la fila 1
+print("\nElementos de la fila 1, columnas 0 y 1 (df.iloc[1, :2]):")
+print(df.iloc[1, :2])
+
+# Acceder a una fila completa (fila 2)
+print("\nFila completa en la posición 2 (df.iloc[2]):")
+print(df.iloc[2])

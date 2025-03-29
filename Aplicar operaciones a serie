@@ -1,0 +1,24 @@
+import pandas as pd
+
+# Crear una Serie numérica
+s1 = pd.Series([1, 2, 3, 4])
+
+# Aplicar operaciones matemáticas
+print("Serie original:")
+print(s1)
+
+print("\nSerie multiplicada por 2:")
+print(s1 * 2)
+
+print("\nSerie con módulo 2:")
+print(s1 % 2)
+
+# Crear una Serie de cadenas
+s2 = pd.Series(["a", "b", "c"])
+
+# Aplicar operaciones con cadenas
+print("\nSerie de cadenas original:")
+print(s2)
+
+print("\nSerie de cadenas multiplicada por 5:")
+print(s2 * 5)

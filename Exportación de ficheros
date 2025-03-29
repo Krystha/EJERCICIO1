@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Importar un archivo CSV desde una URL
+url = "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesteroles.csv"
+df = pd.read_csv(url, sep=";", decimal=",")
+
+# Exportar el DataFrame a un archivo CSV
+df.to_csv("colesteroles_exportado.csv", sep=",", index=False)
+print("El DataFrame se ha exportado a 'colesteroles_exportado.csv'.")
+
+# Exportar el DataFrame a un archivo Excel
+df.to_excel("colesteroles_exportado.xlsx", sheet_name="Hoja1", index=False)
+print("El DataFrame se ha exportado a 'colesteroles_exportado.xlsx'.")

@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Importar un archivo CSV desde una URL
+url = "https://raw.githubusercontent.com/macagua/entrenamiento.data_scientist_python/main/recursos/leccion3/datos/colesteroles.csv"
+df = pd.read_csv(url, sep=";", decimal=",")
+
+# Añadir una nueva columna con una lista
+df["diabetes"] = [False, False, True, False, True, False, True, False, True, False, True, False, True, False, True, False, True, False, True, False]
+
+# Mostrar el DataFrame con la nueva columna
+print("DataFrame con la nueva columna 'diabetes':")
+print(df)
